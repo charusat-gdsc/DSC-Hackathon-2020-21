@@ -111,24 +111,32 @@
     margin-top: 10%;
   }
   .SVG img {
-    margin-left: 2%;
-    width: 400px;
+    margin-top: 11%;
+    margin-left: 5%;
+    width: 350px;
     height: 450px;
   }
   .Info {
     width: 100%;
+    margin-left: 0%;
   }
   .heading1 {
     font-size: 50px;
-    margin-left: 1%;
+    margin-left: 5%;
   }
   .heading2 {
     margin-top: 2%;
-    margin-left: 1%;
+    margin-left: 5%;
     font-size: 24px;
   }
+  .btn {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
   .text {
-    margin-left: 1%;
+    line-height: 170%;
+    margin-right: 5%;
+    margin-left: 5%;
   }
   .backImg {
     width: 100%;
@@ -143,8 +151,8 @@
     margin-left: 3%;
   }
   .svgLeft img {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     margin-left: 0%;
   }
   .flex2 {

@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import TeamWork from "../../assets/teamwork.svg";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
@@ -18,11 +18,22 @@ import SVG from "../../Components/HomePage Components/SVGS/SVG";
 import Rules from "../../Components/HomePage Components/Rules/Rules";
 import Contact from "../../Components/HomePage Components/Contact/Contact";
 import SideDrawer from "../../Components/Navbar/Sidedrawer/SideDrawer";
+import Backdrop from "../../Components/Navbar/Backdrop/Backdrop";
+
 const Homepage = () => {
+  const [sideDrawer, setsideDrawer] = useState(false);
+  const showSideDrawer = (value) => {
+    setsideDrawer(value);
+  };
   return (
     <Fragment>
-      {/* <SideDrawer /> */}
-      <Navbar />
+      {sideDrawer ? (
+        <Fragment>
+          <SideDrawer showSideDrawer={showSideDrawer} />
+          <Backdrop showSideDrawer={showSideDrawer} />
+        </Fragment>
+      ) : null}
+      <Navbar showSideDrawer={showSideDrawer} />
       <section id='home' className={classes.Container}>
         <div className={classes.Info}>
           <h1 className={classes.heading1}>HACKBASH </h1>

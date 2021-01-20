@@ -6,7 +6,7 @@ import Logo from "../../assets/dsc_logo.png";
 import Scrollspy from "react-scrollspy";
 import { Link } from "react-router-dom";
 import { debounce } from "./Helper";
-const Navbar = () => {
+const Navbar = ({ showSideDrawer }) => {
   const handleImageClick = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
   };
@@ -93,6 +93,11 @@ const Navbar = () => {
             </Link>
           </ul>
         </Scrollspy>
+      </div>
+      <div onClick={()=>showSideDrawer(true)} className={classes.hamburger}>
+        <div className={classes.lines}></div>
+        <div className={classes.lines}></div>
+        <div className={classes.lines}></div>
       </div>
     </div>
   );

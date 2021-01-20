@@ -52,6 +52,9 @@
 .current {
   border-bottom: 2px solid tomato;
 }
+.hamburger {
+  display: none;
+}
 
 @keyframes moveDown {
   from {
@@ -63,7 +66,22 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  .Container {
+  .Links {
     display: none;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .hamburger {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .lines {
+    background: black;
+    width: 35px;
+    margin-top: 6px;
+    height: 5px;
   }
 }
