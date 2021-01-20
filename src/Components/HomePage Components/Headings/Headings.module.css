@@ -1,0 +1,11 @@
+/** @format */
+
+.Heading {
+  text-align: center;
+  font-size: 38px;
+  font-weight: bolder;
+  padding-top: 5%;
+  color: #653ab9;
+  padding-bottom: 5%;
+  font-family: "Open Sans", serif;
+}

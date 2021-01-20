@@ -1,0 +1,169 @@
+/** @format */
+
+.Container {
+  display: flex;
+  margin-bottom: 5%;
+  margin-top: 1%;
+}
+.SVG {
+  margin-top: 6%;
+}
+.Info {
+  width: 50%;
+  margin-top: 6%;
+  margin-left: 10%;
+  /* background-color: tomato; */
+}
+.heading1 {
+  letter-spacing: 10px;
+  margin-left: 10%;
+  color: #e26161;
+  margin-top: 10%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 70px;
+}
+.heading2 {
+  font-family: "Open Sans", sans-serif;
+  color: #2b303f;
+  font-size: 48px;
+  margin-left: 10%;
+}
+.text {
+  margin-left: 10%;
+  margin-top: 3%;
+  font-size: 22px;
+  font-family: "Open Sans", sans-serif;
+}
+.round {
+  text-align: center;
+  margin-top: 3%;
+  font-size: 22px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.process {
+  margin-bottom: 4%;
+}
+
+.btn {
+  background-color: #653ab9;
+  font-size: 22px;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.backImg {
+  height: 80vh;
+  z-index: 2;
+  /* filter: brightness(30%); */
+  background: url("../../assets/Capture.PNG") no-repeat center center/cover;
+}
+
+.flex {
+  display: flex;
+  margin-bottom: 10%;
+}
+.flex2 {
+  display: flex;
+  /* margin-bottom: 1%; */
+}
+.flex3 {
+  display: flex;
+  /* margin-bottom: 1%; */
+}
+.background {
+  background-color: #f6f6f6;
+  padding-bottom: 3%;
+}
+
+.svgRight {
+  margin-right: 10%;
+}
+.svgLeft {
+  margin-left: 10%;
+}
+
+.img {
+  height: 300px;
+  width: 400px;
+  padding-top: 10%;
+  padding-left: 10%;
+}
+.img2 {
+  background: url("../../assets/collab.png") no-repeat center center/cover;
+  height: 300px;
+  width: 400px;
+  padding-top: 10%;
+  margin-left: -50%;
+}
+
+@media (max-width: 1200px) {
+  .Container {
+    flex-direction: column-reverse;
+    margin-bottom: 10%;
+  }
+  .process {
+    margin-top: 10%;
+  }
+  .SVG img {
+    margin-left: 2%;
+    width: 400px;
+    height: 450px;
+  }
+  .Info {
+    width: 100%;
+  }
+  .heading1 {
+    font-size: 50px;
+    margin-left: 1%;
+  }
+  .heading2 {
+    margin-top: 2%;
+    margin-left: 1%;
+    font-size: 24px;
+  }
+  .text {
+    margin-left: 1%;
+  }
+  .backImg {
+    width: 100%;
+    background: url("../../assets/Capture.PNG") no-repeat top top;
+  }
+  .flex {
+    flex-direction: column-reverse;
+  }
+  .svgRight img {
+    width: 350px;
+    height: 350px;
+    margin-left: 3%;
+  }
+  .svgLeft img {
+    width: 350px;
+    height: 350px;
+    margin-left: 0%;
+  }
+  .flex2 {
+    flex-direction: column;
+  }
+  .background {
+    margin-top: 7%;
+  }
+  .img {
+    height: 250px;
+    width: 250px;
+    padding: 0;
+    margin-left: 0%;
+  }
+  .round {
+    font-size: 25px;
+  }
+  .flex3 {
+    margin-top: 5%;
+    flex-direction: column-reverse;
+  }
+}

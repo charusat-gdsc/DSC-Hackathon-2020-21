@@ -1,0 +1,15 @@
+/** @format */
+
+.Container {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Container {
+    display: inline-block;
+    position: absolute;
+    height: 100vh;
+    width: 80vw;
+    background-color: tomato;
+  }
+}

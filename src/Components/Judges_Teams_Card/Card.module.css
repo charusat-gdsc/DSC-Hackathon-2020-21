@@ -1,0 +1,17 @@
+/** @format */
+
+.Container {
+  height: 300px;
+  width: 300px;
+  margin-left: 7%;
+  margin-top: 5%;
+  background-color: aqua;
+}
+
+.img {
+  height: 300px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
