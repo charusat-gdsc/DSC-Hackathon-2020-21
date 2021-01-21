@@ -87,12 +87,21 @@
 .svgLeft {
   margin-left: 10%;
 }
+.center {
+  margin-left: 10%;
+}
+.center2 {
+  margin-left: 10%;
+}
 
 .img {
   height: 300px;
-  width: 400px;
-  padding-top: 10%;
-  padding-left: 10%;
+  width: 350px;
+  display: block;
+  margin: auto;
+  margin-top: 10%;
+  /* padding-top: 10%;
+  padding-left: 10%; */
 }
 .img2 {
   background: url("../../assets/collab.png") no-repeat center center/cover;
@@ -162,10 +171,12 @@
     margin-top: 7%;
   }
   .img {
-    height: 250px;
-    width: 250px;
-    padding: 0;
+    margin-top: 5%;
+    padding-left: 3%;
+  }
+  .svgLeft {
     margin-left: 0%;
+    width: 100%;
   }
   .round {
     font-size: 25px;
@@ -173,5 +184,15 @@
   .flex3 {
     margin-top: 5%;
     flex-direction: column-reverse;
+  }
+  .center img {
+    width: 350px;
+    height: 300px;
+    margin-left: -10%;
+  }
+  .center2 img {
+    width: 300px;
+    height: 250px;
+    margin-left: 1%;
   }
 }

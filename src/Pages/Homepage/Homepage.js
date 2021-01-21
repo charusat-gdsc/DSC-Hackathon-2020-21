@@ -60,7 +60,7 @@ const Homepage = () => {
           </div>
         </div>
         <div className={classes.flex2}>
-          <div className={classes.svgLeft}>
+          <div className={classes.center}>
             <SVG svgsrc={TeamsSVG} />
           </div>
           <div>
@@ -74,7 +74,7 @@ const Homepage = () => {
           <div>
             <Info content={Prices} heading={"Win Exciting Prices"} />
           </div>
-          <div className={classes.svgRight}>
+          <div className={classes.center2}>
             <SVG svgsrc={PrizesSVG} />
           </div>
         </div>
@@ -83,7 +83,9 @@ const Homepage = () => {
         <Heading heading={"Hackathon Process"} />
         <div className={classes.flex2}>
           <div className={classes.svgLeft}>
-            <img src={Presentation} alt='Laptop' className={classes.img} />
+            <div className={classes.img}>
+              <img src={Presentation} alt='Laptop' className={classes.img} />
+            </div>
             <p className={classes.round}>Round 1</p>
             <p className={classes.round}>Resume And Presentation</p>
           </div>
@@ -111,7 +113,7 @@ const Homepage = () => {
       <section className={classes.background} id='judges'>
         <Heading heading={"Judges"} />
         <div className={classes.flex2}>
-          <div className={classes.svgLeft}>
+          <div className={classes.center2}>
             <SVG svgsrc={Review} />
           </div>
           <div>
