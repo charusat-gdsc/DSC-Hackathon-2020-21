@@ -89,17 +89,13 @@ const Homepage = () => {
             <p className={classes.round}>Round 1</p>
             <p className={classes.round}>Resume And Presentation</p>
           </div>
-          <div>
+          <div className={classes.margin}>
             <Info content={Prices} heading={"Selection Round"} />
             <Info content={Process2} />
           </div>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
         <div className={classes.flex3}>
-          <div>
+          <div className={classes.margin}>
             <Info content={Prices} heading={"Final Round"} />
             <Info content={Process2} />
           </div>

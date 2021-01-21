@@ -35,6 +35,9 @@ const Footer = () => {
       <div className={classes.Copyright}>
         Copyright 2021 All rights reserved | Cognizance Hackathon
       </div>
+      <div className={classes.Copyright2}>
+        Designed and Developed by DSC CHARUSAT with ❤
+      </div>
     </div>
   );
 };

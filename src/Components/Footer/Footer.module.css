@@ -53,8 +53,15 @@
 }
 .Copyright {
   text-align: center;
-  padding-bottom: 5%;
   margin-top: 1%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: white;
+}
+.Copyright2 {
+  text-align: center;
+  padding-bottom: 5%;
+  margin-top: 2%;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   color: white;
@@ -73,7 +80,8 @@
     margin-top: 5%;
     text-align: center;
   }
-  .Copyright {
+  .Copyright,
+  .Copyright2 {
     margin-top: 7%;
     font-size: 20px;
     margin-left: 15%;
