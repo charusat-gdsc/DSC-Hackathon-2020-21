@@ -2,23 +2,26 @@
 
 import classes from "./Footer.module.css";
 import React from "react";
+import discordLogo from "../../assets/la_discord.svg";
+import instaLogo from "../../assets/dashicons_instagram.svg";
+import twitterLogo from "../../assets/eva_twitter-outline.svg";
 
 const Footer = () => {
-   const handleImageClick = (id) => {
-     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
-   };
+  const handleImageClick = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className={classes.Container}>
       <p className={classes.heading}>Follow Us</p>
       <div className={classes.socials}>
         <div className={classes.box}>
-          <i class='fab fa-discord fa-2x'></i>
+          <img src={discordLogo} alt='Discord' />
         </div>
         <div className={classes.box}>
-          <i className={classes.box} class='fab fa-instagram fa-2x'></i>
+          <img src={instaLogo} alt='Discord' />
         </div>
         <div className={classes.box}>
-          <i className={classes.box} class='fab fa-twitter fa-2x'></i>
+          <img src={twitterLogo} alt='Discord' />
         </div>
       </div>
       <div className={classes.links}>
