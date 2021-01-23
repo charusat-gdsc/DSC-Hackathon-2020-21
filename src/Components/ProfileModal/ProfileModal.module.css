@@ -1,0 +1,126 @@
+.modal {
+  position: fixed;
+  z-index: 500;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px black;
+  top: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalContainer {
+  width: 80%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 2px;
+}
+.modalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  border-bottom: 2px solid gray;
+  padding: 0% 4%;
+}
+.header {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.closeIcon{
+  cursor: pointer;
+}
+.modalBody {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2% 4%;
+}
+.profileModal {
+  width: 40%;
+  max-width: 40%;
+  height: 100%;
+}
+.descriptionModal {
+  width: 60%;
+  max-width: 60%;
+  height: 100%;
+  padding: 0% 4%;
+}
+.contactPart {
+  margin-top: 48px;
+}
+.iconsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  letter-spacing: 0;
+}
+.icons {
+  font-size: 24px;
+  color: #2b303f;
+  margin-top: 2%;
+  margin-right: 2%;
+  cursor: pointer;
+}
+.icons:hover {
+  color: #653ab9;
+}
+.img {
+  height: 350px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.name {
+  margin-top: 3%;
+  font-size: 1.4rem;
+  color: black;
+}
+
+.role {
+  font-size: 1rem;
+  color: #653ab9;
+}
+
+@media (max-width: 600px) {
+  .modal {
+    padding: 0 5%;
+  }
+  .modalContainer {
+    height: 90%;
+    width: 100%;
+  }
+  .modalBody {
+    height: auto;
+    flex-direction: column;
+    padding-bottom: 8%;
+  }
+  .profileModal {
+    width: 100%;
+    max-width: 100%;
+  }
+  .descriptionModal {
+    width: 100%;
+    max-width: 100%;
+    padding: 3% 0%;
+  }
+  .contactPart {
+    margin-top: 20px;
+  }
+}

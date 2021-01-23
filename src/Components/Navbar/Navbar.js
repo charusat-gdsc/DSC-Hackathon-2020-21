@@ -6,6 +6,7 @@ import Logo from "../../assets/dsc_logo.png";
 import Scrollspy from "react-scrollspy";
 import { Link } from "react-router-dom";
 import { debounce } from "./Helper";
+
 const Navbar = ({ showSideDrawer }) => {
   const handleImageClick = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
@@ -75,7 +76,7 @@ const Navbar = ({ showSideDrawer }) => {
             </Link>
             <Link
               className={classes.link}
-              to='#judges'
+              to='/judges'
               onClick={() => handleImageClick("judges")}>
               Judges
             </Link>

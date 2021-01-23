@@ -2,26 +2,23 @@
 
 import classes from "./Footer.module.css";
 import React from "react";
-import discordLogo from "../../assets/la_discord.svg";
-import instaLogo from "../../assets/dashicons_instagram.svg";
-import twitterLogo from "../../assets/eva_twitter-outline.svg";
 
 const Footer = () => {
-  const handleImageClick = (id) => {
-    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
-  };
+   const handleImageClick = (id) => {
+     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+   };
   return (
     <div className={classes.Container}>
       <p className={classes.heading}>Follow Us</p>
       <div className={classes.socials}>
         <div className={classes.box}>
-          <img src={discordLogo} alt='Discord' />
+          <i class='fab fa-discord fa-2x'></i>
         </div>
         <div className={classes.box}>
-          <img src={instaLogo} alt='Discord' />
+          <i className={classes.box} class='fab fa-instagram fa-2x'></i>
         </div>
         <div className={classes.box}>
-          <img src={twitterLogo} alt='Discord' />
+          <i className={classes.box} class='fab fa-twitter fa-2x'></i>
         </div>
       </div>
       <div className={classes.links}>
@@ -37,9 +34,6 @@ const Footer = () => {
       </div>
       <div className={classes.Copyright}>
         Copyright 2021 All rights reserved | Cognizance Hackathon
-      </div>
-      <div className={classes.Copyright2}>
-        Designed and Developed by DSC CHARUSAT with ❤
       </div>
     </div>
   );
