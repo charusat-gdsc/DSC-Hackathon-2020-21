@@ -74,7 +74,6 @@
 }
 .flex3 {
   display: flex;
-  margin-top: 6%;
   /* margin-bottom: 1%; */
 }
 .background {
@@ -117,63 +116,36 @@
     flex-direction: column-reverse;
     margin-bottom: 10%;
   }
-  .backImg {
-    max-width: 100%;
-    /* height: auto; */
-  }
   .process {
     margin-top: 10%;
   }
   .SVG img {
-    display: block;
-    margin: auto;
-    margin-top: 5%;
-    /* margin-left: 5%; */
+    margin-top: 11%;
+    margin-left: 5%;
     width: 350px;
     height: 450px;
   }
   .Info {
     width: 100%;
     margin-left: 0%;
-    display: block;
-    margin: auto;
   }
   .heading1 {
     font-size: 50px;
-    text-align: center;
-    margin-left: 0%;
+    margin-left: 5%;
   }
   .heading2 {
-    text-align: center;
-    margin-left: 0%;
     margin-top: 2%;
+    margin-left: 5%;
     font-size: 24px;
   }
   .btn {
+    margin-left: 15%;
     margin-right: 15%;
-    display: block;
-    margin: 5% auto;
-  }
-  .svgRight {
-    display: block;
-    margin: auto;
   }
   .text {
     line-height: 170%;
     margin-right: 5%;
-    padding-top: 5%;
-    display: block;
-    margin: auto;
-    text-align: center;
     margin-left: 5%;
-  }
-  .center,
-  .center2 {
-    display: block;
-    margin: auto;
-  }
-  .center2 {
-    margin-top: 4%;
   }
   .backImg {
     width: 100%;
@@ -199,12 +171,8 @@
     margin-top: 7%;
   }
   .img {
-    height: auto;
     margin-top: 5%;
     padding-left: 3%;
-  }
-  .margin {
-    margin-top: 3%;
   }
   .svgLeft {
     margin-left: 0%;
@@ -214,8 +182,7 @@
     font-size: 25px;
   }
   .flex3 {
-    margin-right: 1%;
-    margin-top: 10%;
+    margin-top: 5%;
     flex-direction: column-reverse;
   }
   .center img {
