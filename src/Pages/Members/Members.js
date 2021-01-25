@@ -3,13 +3,13 @@
 import React, { useState } from "react";
 
 import Card from "../../Components/Judges_Teams_Card/Card";
-import classes from "./Judges.module.css";
+import classes from "./Members.module.css";
 import Musk from "../../assets/Judges/temp.jpg";
 import Footer from "../../Components/Footer/Footer";
 import ProfileModal from "../../Components/ProfileModal/ProfileModal";
 // import Page from "../../Layout/Page";
 
-const Judges = () => {
+const Members = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [modalData, setModalData] = useState({});
 
@@ -44,7 +44,7 @@ const Judges = () => {
           <span className={classes.homeText}>Home</span>
         </div>
         <div className={classes.judgeContainer}>
-          <span className={classes.judgeText}>JUDGES</span>
+          <span className={classes.judgeText}>Members</span>
           <span className={classes.randomText}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -55,8 +55,8 @@ const Judges = () => {
       <div className={classes.flexContainer}>
         <Card
           image={Musk}
-          name={"Elon Musk"}
-          role={"CEO"}
+          name={"Jainam Mehta"}
+          role={"DSC LEAD"}
           instagram={"https://twitter.com/home"}
           linkedin={"https://twitter.com/home"}
           twitter={"https://twitter.com/home"}
@@ -66,7 +66,7 @@ const Judges = () => {
         <Card
           image={Musk}
           name={"Aditya Pahilwni"}
-          role={"CEO"}
+          role={"DSC CORE"}
           instagram={"https://twitter.com/home"}
           linkedin={"https://twitter.com/home"}
           twitter={"https://twitter.com/home"}
@@ -120,4 +120,4 @@ const Judges = () => {
   );
 };
 
-export default Judges;
+export default Members;

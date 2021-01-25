@@ -4,11 +4,16 @@
   height: auto;
   width: 300px;
   background-color: white;
-  margin: 2% 5%;
+  margin: 1.2% 2%;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
   letter-spacing: 2px;
+}
+@media (max-width: 600px) {
+  .Container {
+    margin: 3% 2%;
+  }
 }
 .imageContainer {
   position: relative;
