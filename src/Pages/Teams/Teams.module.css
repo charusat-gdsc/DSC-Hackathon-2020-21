@@ -3,6 +3,8 @@
 .flexContainer {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 5%;
   align-items: center;
 }
 .imageContainer {
@@ -27,11 +29,12 @@
   justify-content: space-between;
   font-family: "Open Sans", sans-serif;
 }
-.dscLogo {
-  height: 50px;
-  width: 50px;
-  background-color: red;
-  background-image: url("../../assets/dsc_logo.png");
+.dscLogo img {
+  margin-left: 15%;
+  height: 100px;
+  width: 100px;
+  background-repeat: no-repeat;
+  /* background-image: url("../../assets/dsc_logo.ico"); */
   background-size: "cover";
   background-position: "center";
 }
@@ -42,7 +45,11 @@
   letter-spacing: 4px;
   font-weight: bold;
 }
-.homeText:hover{
+.homeText a {
+  text-decoration: none;
+  color: white;
+}
+.homeText:hover {
   color: #653ab9;
   cursor: pointer;
 }
@@ -75,10 +82,15 @@
     margin-top: 3%;
     font-size: 2rem;
   }
-  .randomText{
+  .headerContainer {
+    height: 15%;
+  }
+  .randomText {
     font-size: 1rem;
     margin-left: 10%;
     margin-right: 10%;
-
+  }
+  .imageContainer {
+    overflow-y: hidden;
   }
 }

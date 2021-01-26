@@ -7,7 +7,6 @@ import Footer from "../../Components/Footer/Footer";
 import classes from "./HomePage.module.css";
 import Heading from "../../Components/HomePage Components/Headings/Heading";
 import Info from "../../Components/HomePage Components/Info/Info";
-import { Text, Team, Prices, Process2 } from "./Content";
 import MissionSVG from "../../assets/mission.svg";
 import Presentation from "../../assets/presentation.png";
 import collab from "../../assets/collab.png";
@@ -19,6 +18,7 @@ import Rules from "../../Components/HomePage Components/Rules/Rules";
 import Contact from "../../Components/HomePage Components/Contact/Contact";
 import SideDrawer from "../../Components/Navbar/Sidedrawer/SideDrawer";
 import Backdrop from "../../Components/Navbar/Backdrop/Backdrop";
+import { Link } from "react-router-dom";
 
 const Homepage = () => {
   const [sideDrawer, setsideDrawer] = useState(false);
@@ -53,7 +53,12 @@ const Homepage = () => {
         <Heading heading={"About"} />
         <div className={classes.flex}>
           <div>
-            <Info content={Text} heading={"Our Mission"} />
+            <Info
+              content={
+                "The sole mission of the Developer Student Club (DSC) is to bring together like-minded students interested in google technologies. Powered by Google Developers, DSC endeavors to wedge the gap between theory and practice. We, 8 DSC’s come together promoting our motto as we profoundly welcome applications from students throughout the country. DSC encourages students to solve real world problems and also gives an amazing opportunity to connect with alike minds, learn from them and grow towards their goals in their own way."
+              }
+              heading={"Our Mission"}
+            />
           </div>
           <div className={classes.svgRight}>
             <SVG svgsrc={MissionSVG} />
@@ -64,7 +69,16 @@ const Homepage = () => {
             <SVG svgsrc={TeamsSVG} />
           </div>
           <div>
-            <Info content={Team} heading={"Our Team"} />
+            <Info
+              content={
+                "Alone we can do so little, together we can do so much Our team is a compilation of astounding developers who have come together making this club exhilarating and well organized. As we constantly strive to encourage you towards development, we 8 DSC’s with more than 60 devs of Gujarat have joined our hands to organize a 24 hours Hackathon, HackBash. Our team of skilled developers and experts is at your disposal."
+              }
+              heading={"Our Team"}
+            />
+            <br />
+            <Link className={classes.LearnMore} to='/teams'>
+              Learn More..
+            </Link>
           </div>
         </div>
       </section>
@@ -72,7 +86,12 @@ const Homepage = () => {
         <Heading heading={"Prizes"} />
         <div className={classes.flex2}>
           <div>
-            <Info content={Prices} heading={"Win Exciting Prices"} />
+            <Info
+              content={
+                "Nothing piques the interest of a developer more than the developer swag!  As the saying goes “ The reward for work well done is the opportunity to do more”, who wouldn’t wanna grab some exciting goodies and swags that come with your hard work.  We cannot promise you Redbull in the online mode, but you have nothing to worry about as we have lots of prizes reserved for you. The HackBash brings you prizes worth Rs 40,000/-.  Not only this, we have swags, goodies, stickers, and a lot more stuff awaiting you. So what's stopping you from grabbing this opportunity?"
+              }
+              heading={"Win Exciting Prices"}
+            />
           </div>
           <div className={classes.center2}>
             <SVG svgsrc={PrizesSVG} />
@@ -90,18 +109,22 @@ const Homepage = () => {
             <p className={classes.round}>Resume And Presentation</p>
           </div>
           <div>
-            <Info content={Prices} heading={"Selection Round"} />
-            <Info content={Process2} />
+            <Info
+              content={
+                "The way to get started is to quit talking and begin Doing…Teams for the event will be selected on the basis of their Devfolio profile and their Resumes.We would love to hear what you are going to build. A brief description of around 200 words about your creative ideas will add an extra flourish to get people to talking."
+              }
+              heading={"Selection Round"}
+            />
           </div>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
         <div className={classes.flex3}>
           <div>
-            <Info content={Prices} heading={"Final Round"} />
-            <Info content={Process2} />
+            <Info heading={"Final Round"} />
+            <Info
+              content={
+                "You want it ? then fight for it… Shortlisted teams will be announced for the final showdown… A kick off call will be conducted to set the course and tone of the event for the teams & become acquainted to the judges. The final idea submission has to be made using the shared portal-link on Devfolio. You will have 24 hours to convert your idea into a working system which will compete with the rest of all. May the best hack win !"
+              }
+            />
           </div>
           <div className={classes.svgRight}>
             <img src={collab} alt='Laptop' className={classes.img} />
@@ -117,7 +140,42 @@ const Homepage = () => {
             <SVG svgsrc={Review} />
           </div>
           <div>
-            <Info content={Prices} heading={"Evaluation Basis"} />
+            <Info
+              content={
+                "Your project will be evaluated on the following criterias"
+              }
+              heading={"Evaluation Basis"}
+            />
+            <br />
+            <Info smallHead={true} heading={"Impact"} />
+            <Info
+              content={
+                "What makes an idea great is the impact that it creates and the work it's supposed to do. The bigger the impact, the greater the innovation… "
+              }
+            />
+            <br />
+            <Info smallHead={true} heading={"Technology"} />
+            <Info
+              content={
+                "Different technologies have different applications and it is your job to determine which suits your hack the best."
+              }
+            />
+            <Info
+              content={
+                "Drawing to a close with a panel of judges for evaluating the winning hack, criteria for winning hacks:"
+              }
+            />
+
+            <ul className={classes.list}>
+              <li>Creative</li>
+              <li>Innovative</li>
+              <li>Useful</li>
+            </ul>
+            <Info
+              content={
+                "“Novelty of ideas matters, more creative ideas do better here, but the execution of the idea matters too.”"
+              }
+            />
           </div>
         </div>
       </section>
@@ -125,21 +183,18 @@ const Homepage = () => {
         <Heading heading={"Rules"} />
         <Rules
           content={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed condimentum mauris. Praesent viverra tortor libero, eusemper sapien viverra quis."
+            "Attendees from all backgrounds, genders, and geographies are welcome. There is no age restriction to attend the hackathon. In case you are under 18, your parents/legal guardian should contact the hackathon to request a waiver authorizing you to attend the hackathon and submit their plan for your attendance and transportation to and from the hackathon."
           }
         />
         <Rules
           content={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed condimentum mauris."
+            "Committee members are not eligible to participate in the hackathon. They may, however, assist teams mentors during the coding/development phase."
           }
         />
         <Rules
           content={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed condimentum mauris. Praesent viverra tortor libero, eusemper sapien viverra quis. Curabitur sed condimentum mauris."
+            "There is no country restriction but you must be eligible to receive prizes (in case you win) and you are responsible for paying any taxes on the prize winnings."
           }
-        />
-        <Rules
-          content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
         />
       </section>
       <section id='contact'>

@@ -1,18 +1,20 @@
 /** @format */
 
 import React, { useState } from "react";
-
+import { useLocation } from "react-router-dom";
+import values from "../../teams.json";
 import Card from "../../Components/Judges_Teams_Card/Card";
 import classes from "./Members.module.css";
 import Musk from "../../assets/Judges/temp.jpg";
 import Footer from "../../Components/Footer/Footer";
 import ProfileModal from "../../Components/ProfileModal/ProfileModal";
-// import Page from "../../Layout/Page";
+import { Link } from "react-router-dom";
 
 const Members = () => {
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const [modalData, setModalData] = useState({});
-
+  const college_name = location.pathname.split("/")[2];
   const showData = ({
     image,
     name,
@@ -41,81 +43,36 @@ const Members = () => {
       <div className={classes.imageContainer}>
         <div className={classes.headerContainer}>
           <div className={classes.dscLogo}></div>
-          <span className={classes.homeText}>Home</span>
+          <Link to={"/"} className={classes.homeText}>
+            Home
+          </Link>
         </div>
         <div className={classes.judgeContainer}>
-          <span className={classes.judgeText}>Members</span>
-          <span className={classes.randomText}>
+          <div className={classes.judgeText}>{college_name}</div>
+          <div className={classes.randomText}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s,
-          </span>
+          </div>
         </div>
       </div>
       <div className={classes.flexContainer}>
-        <Card
-          image={Musk}
-          name={"Jainam Mehta"}
-          role={"DSC LEAD"}
-          instagram={"https://twitter.com/home"}
-          linkedin={"https://twitter.com/home"}
-          twitter={"https://twitter.com/home"}
-          facebook={"https://twitter.com/home"}
-          showData={showData}
-        />
-        <Card
-          image={Musk}
-          name={"Aditya Pahilwni"}
-          role={"DSC CORE"}
-          instagram={"https://twitter.com/home"}
-          linkedin={"https://twitter.com/home"}
-          twitter={"https://twitter.com/home"}
-          facebook={"https://twitter.com/home"}
-          showData={showData}
-        />
-        <Card
-          image={Musk}
-          name={"Elon Musk"}
-          role={"CEO"}
-          instagram={"https://twitter.com/home"}
-          linkedin={"https://twitter.com/home"}
-          twitter={"https://twitter.com/home"}
-          facebook={"https://twitter.com/home"}
-          showData={showData}
-        />
-        <Card
-          image={Musk}
-          name={"Elon Musk"}
-          role={"CEO"}
-          instagram={"https://twitter.com/home"}
-          linkedin={"https://twitter.com/home"}
-          twitter={"https://twitter.com/home"}
-          facebook={"https://twitter.com/home"}
-          showData={showData}
-        />
-        <Card
-          image={Musk}
-          name={"Elon Musk"}
-          role={"CEO"}
-          instagram={"https://twitter.com/home"}
-          linkedin={"https://twitter.com/home"}
-          twitter={"https://twitter.com/home"}
-          facebook={"https://twitter.com/home"}
-          showData={showData}
-        />
-        <Card
-          image={Musk}
-          name={"Elon Musk"}
-          role={"CEO"}
-          instagram={"https://twitter.com/home"}
-          linkedin={"https://twitter.com/home"}
-          twitter={"https://twitter.com/home"}
-          facebook={"https://twitter.com/home"}
-          showData={showData}
-        />
+        {values[college_name].map((element) => (
+          <Card
+            image={Musk}
+            name={element.name}
+            description={element.description}
+            role={element.role}
+            instagram={element.instagram}
+            linkedin={element.linkedin}
+            twitter={element.twitter}
+            facebook={element.facebook}
+            showData={showData}
+          />
+        ))}
       </div>
       <Footer />
-      <ProfileModal isOpen={isOpen} setIsOpen={setIsOpen} />
+      <ProfileModal Data={modalData} isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   );
 };

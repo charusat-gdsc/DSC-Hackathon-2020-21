@@ -1,7 +1,7 @@
 /** @format */
 
-import classes from "./Card.module.css";
 import React from "react";
+import classes from "./Card.module.css";
 import {
   FaFacebookF,
   FaTwitter,
@@ -26,14 +26,21 @@ const Card = (props) => {
   const showDatafunc = (e) => {
     showData(props);
   };
+  const TeamRedirect = () => {
+    // const link = props.name.split(" ").join("-");
+    // history.push(`/teams/${link}`);
+  };
   return (
-    <div className={classes.Container}>
+    <div
+      className={classes.Container}
+      onClickCapture={props.teams ? TeamRedirect : showDatafunc}>
       <div className={classes.imageContainer}>
-        <img className={classes.img} src={image} alt="Musk" />
+        <img className={classes.img} src={image} alt='Musk' />
         <div className={classes.overlay}>
           <div className={classes.socialContainer}>
             {facebook && (
               <FaFacebookF
+                className={classes.social}
                 style={iconObj}
                 onClick={openLink.bind(this, facebook)}
               />
@@ -41,6 +48,7 @@ const Card = (props) => {
 
             {twitter && (
               <FaTwitter
+                className={classes.social}
                 style={iconObj}
                 onClick={openLink.bind(this, twitter)}
               />
@@ -48,6 +56,7 @@ const Card = (props) => {
 
             {linkedin && (
               <FaLinkedinIn
+                className={classes.social}
                 style={iconObj}
                 onClick={openLink.bind(this, linkedin)}
               />
@@ -55,6 +64,7 @@ const Card = (props) => {
 
             {instagram && (
               <FaInstagram
+                className={classes.social}
                 style={iconObj}
                 onClick={openLink.bind(this, instagram)}
               />
@@ -63,7 +73,7 @@ const Card = (props) => {
         </div>
       </div>
 
-      <div style={{ padding: "3% 5%" }} onClickCapture={showDatafunc}>
+      <div style={{ padding: "3% 5%" }}>
         <p className={classes.name}>{name}</p>
         <p className={classes.role}>{role}</p>
       </div>

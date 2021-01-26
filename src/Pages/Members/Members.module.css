@@ -1,14 +1,15 @@
+/** @format */
+
 .flexContainer {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
 }
 .imageContainer {
   position: relative;
   height: 75vh;
   width: 100%;
+  background-repeat: no-repeat;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../../assets/collab.png");
   background-size: "cover";
@@ -35,10 +36,15 @@
   background-position: "center";
 }
 .homeText {
+  text-decoration: none;
   color: white;
   font-size: 1.6rem;
   letter-spacing: 4px;
   font-weight: bold;
+}
+.homeText:hover{
+  color: #653ab9;
+  cursor: pointer;
 }
 .judgeContainer {
   position: relative;
@@ -58,6 +64,21 @@
 }
 .randomText {
   color: white;
+  margin-top: 3%;
+  margin-left: 20%;
+  margin-right: 20%;
   font-size: 1.6rem;
   text-align: center;
+}
+@media (max-width: 600px) {
+  .judgeText {
+    margin-top: 3%;
+    font-size: 2rem;
+  }
+  .randomText{
+    font-size: 1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+
+  }
 }

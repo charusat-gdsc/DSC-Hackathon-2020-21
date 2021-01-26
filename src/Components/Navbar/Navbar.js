@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import classes from "./nav.module.css";
-import Logo from "../../assets/dsc_logo.png";
+import Logo from "../../assets/dsc_logo.ico";
 import Scrollspy from "react-scrollspy";
 import { Link } from "react-router-dom";
 import { debounce } from "./Helper";
@@ -76,7 +76,7 @@ const Navbar = ({ showSideDrawer }) => {
             </Link>
             <Link
               className={classes.link}
-              to='/judges'
+              to='#judges'
               onClick={() => handleImageClick("judges")}>
               Judges
             </Link>
@@ -95,7 +95,7 @@ const Navbar = ({ showSideDrawer }) => {
           </ul>
         </Scrollspy>
       </div>
-      <div onClick={()=>showSideDrawer(true)} className={classes.hamburger}>
+      <div onClick={() => showSideDrawer(true)} className={classes.hamburger}>
         <div className={classes.lines}></div>
         <div className={classes.lines}></div>
         <div className={classes.lines}></div>
