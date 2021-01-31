@@ -1,6 +1,6 @@
 /** @format */
 
-import React from "react";
+import React, { useEffect } from "react";
 
 import Card from "../../Components/Judges_Teams_Card/Card";
 import classes from "./Teams.module.css";
@@ -18,6 +18,9 @@ import { Link } from "react-router-dom";
 // import Page from "../../Layout/Page";
 
 const Members = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   // const [isOpen, setIsOpen] = useState(false);
   // const [modalData, setModalData] = useState({});
 
@@ -50,16 +53,15 @@ const Members = () => {
           <div className={classes.dscLogo}>
             <img src={DSC_LOGO} alt='Logo' />
           </div>
-          <span className={classes.homeText}>
+          <div className={classes.homeText}>
             <Link to='/'>Home</Link>
-          </span>
+          </div>
         </div>
         <div className={classes.judgeContainer}>
           <span className={classes.judgeText}>Teams</span>
           <span className={classes.randomText}>
             Alone we can do so little, together we can do so much Our team is a
-            compilation of astounding developers who have come together making
-            this club exhilarating and well organized.
+            compilation of astounding developers.
           </span>
         </div>
       </div>

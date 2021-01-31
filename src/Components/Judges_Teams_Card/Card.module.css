@@ -2,14 +2,14 @@
 
 .Container {
   height: auto;
-  font-family: "Open Sans", sans-serif;
   width: 300px;
+  font-family: "Open Sans", sans-serif;
   background-color: white;
   margin: 3% 5%;
-  /* box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2); */
-  /* border-radius: 10px; */
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
   overflow: hidden;
-  /* letter-spacing: 2px; */
+  letter-spacing: 1.3px;
 }
 /* .Container:hover {
   cursor: pointer;
@@ -71,10 +71,11 @@
   color: #653ab9;
 }
 
-@media (max-width: 600px) {
-  .Container {
-    margin: 5% 12%;
-  }
+@media (max-width: 1200px) {
+  /* .Container {
+    width: 200px;
+    margin: 5% 2%;
+  } */
   .imageContainer {
     overflow-y: hidden;
   }

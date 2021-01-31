@@ -42,7 +42,13 @@ const Homepage = () => {
             Think. Code. Innovate. <br />A chance to shine and win exciting
             prices!
           </p>
-          <button className={classes.btn}>Grab Your spot now !</button>
+          <button
+            data-hackathon-slug='YOUR-HACKATHON-SLUG'
+            data-button-theme='light'
+            style={{ height: "44px", width: "312px" }}
+            className={classes.btn}>
+            Grab Your spot now !
+          </button>
         </div>
         <div className={classes.SVG}>
           <img src={TeamWork} alt='SVG' />
@@ -55,25 +61,36 @@ const Homepage = () => {
           <div>
             <Info
               content={
-                "The sole mission of the Developer Student Club (DSC) is to bring together like-minded students interested in google technologies. Powered by Google Developers, DSC endeavors to wedge the gap between theory and practice. We, 8 DSC’s come together promoting our motto as we profoundly welcome applications from students throughout the country. DSC encourages students to solve real world problems and also gives an amazing opportunity to connect with alike minds, learn from them and grow towards their goals in their own way."
+                "The sole mission of the Developer Student Club (DSC) is to bring together like-minded students interested in google technologies. Powered by Google Developers, DSC endeavors to wedge the gap between theory and practice."
               }
               heading={"Our Mission"}
+            />
+            <Info
+              content={
+                "We, 8 DSC’s come together promoting our motto as we profoundly welcome applications from students throughout the country. DSC encourages students to solve real world problems and also gives an amazing opportunity to connect with alike minds, learn from them and grow towards their goals in their own way."
+              }
             />
           </div>
           <div className={classes.svgRight}>
             <SVG svgsrc={MissionSVG} />
           </div>
         </div>
+      </section>
+      <section id='team'>
         <div className={classes.flex2}>
           <div className={classes.center}>
             <SVG svgsrc={TeamsSVG} />
           </div>
           <div>
+            <div className={classes.teamHeading}>Our Team</div>
+            <Info
+              content={"Alone we can do so little, together we can do so much"}
+              bold={true}
+            />
             <Info
               content={
-                "Alone we can do so little, together we can do so much Our team is a compilation of astounding developers who have come together making this club exhilarating and well organized. As we constantly strive to encourage you towards development, we 8 DSC’s with more than 60 devs of Gujarat have joined our hands to organize a 24 hours Hackathon, HackBash. Our team of skilled developers and experts is at your disposal."
+                "Our team is a compilation of astounding developers who have come together making this club exhilarating and well organized. As we constantly strive to encourage you towards development, we 8 DSC’s with more than 60 devs of Gujarat have joined our hands to organize a 24 hours Hackathon, HackBash. Our team of skilled developers and experts is at your disposal."
               }
-              heading={"Our Team"}
             />
             <br />
             <Link className={classes.LearnMore} to='/teams'>
@@ -93,7 +110,7 @@ const Homepage = () => {
               heading={"Win Exciting Prices"}
             />
           </div>
-          <div className={classes.center2}>
+          <div className={classes.center3}>
             <SVG svgsrc={PrizesSVG} />
           </div>
         </div>
@@ -102,32 +119,48 @@ const Homepage = () => {
         <Heading heading={"Hackathon Process"} />
         <div className={classes.flex2}>
           <div className={classes.svgLeft}>
-            <div className={classes.img}>
+            <div>
               <img src={Presentation} alt='Laptop' className={classes.img} />
             </div>
-            <p className={classes.round}>Round 1</p>
-            <p className={classes.round}>Resume And Presentation</p>
+            <div className={classes.margin}>
+              <p className={classes.round}>Round 1</p>
+              <p className={classes.round}>Resume And Presentation</p>
+            </div>
           </div>
           <div>
+            <Info heading={"Selection Round"} />
             <Info
               content={
-                "The way to get started is to quit talking and begin Doing…Teams for the event will be selected on the basis of their Devfolio profile and their Resumes.We would love to hear what you are going to build. A brief description of around 200 words about your creative ideas will add an extra flourish to get people to talking."
+                "The way to get started is to quit talking and begin Doing…"
               }
-              heading={"Selection Round"}
+              bold={true}
+            />
+            <Info
+              content={
+                "Teams for the event will be selected on the basis of their Devfolio profile and their Resumes.We would love to hear what you are going to build. A brief description of around 200 words about your creative ideas will add an extra flourish to get people to talking. "
+              }
             />
           </div>
         </div>
         <div className={classes.flex3}>
           <div>
             <Info heading={"Final Round"} />
+            <Info content={"You want it ? then fight for it… "} bold={true} />
             <Info
               content={
-                "You want it ? then fight for it… Shortlisted teams will be announced for the final showdown… A kick off call will be conducted to set the course and tone of the event for the teams & become acquainted to the judges. The final idea submission has to be made using the shared portal-link on Devfolio. You will have 24 hours to convert your idea into a working system which will compete with the rest of all. May the best hack win !"
+                "Shortlisted teams will be announced for the final showdown… "
               }
             />
+            <Info
+              content={
+                " A kick off call will be conducted to set the course and tone of the event for the teams & become acquainted to the judges. The final idea submission has to be made using the shared portal-link on Devfolio. You will have 24 hours to convert your idea into a working system which will compete with the rest of all."
+              }
+            />
+            <Info content={"May the best hack win !"} bold={true} />
           </div>
           <div className={classes.svgRight}>
             <img src={collab} alt='Laptop' className={classes.img} />
+            <div className={classes.margin}></div>
             <p className={classes.round}>Round 2</p>
             <p className={classes.round}>Final Project Showdown</p>
           </div>

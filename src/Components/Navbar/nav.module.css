@@ -8,18 +8,15 @@
   background-color: white;
   display: flex;
   width: 100%;
-  padding: 0 10%;
+  padding: 0 15%;
   top: 0;
-  height: 80px;
   justify-content: space-between;
   animation: moveDown 0.5s ease-in-out;
   position: fixed;
 }
-.logo {
-  margin-top: 1%;
-}
 .img {
-  height: 70px;
+  height: 80px;
+  width: 80px;
 }
 .Links {
   margin-top: 8%;

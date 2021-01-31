@@ -43,10 +43,9 @@
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
 }
-.links a{
-color: white;
+.links a {
+  color: white;
   text-decoration: none;
-
 }
 .links li:first-child {
   margin-left: 0;

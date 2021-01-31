@@ -7,6 +7,9 @@ import Discord from "../../assets/la_discord.svg";
 import Instagram from "../../assets/dashicons_instagram.svg";
 
 const Footer = () => {
+  const handleImageClick = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className={classes.Container}>
       <p className={classes.heading}>Follow Us</p>
@@ -23,10 +26,17 @@ const Footer = () => {
       <div className={classes.links}>
         <ul>
           <li>
-            <Link to='/#home'>Home</Link>
+            <Link to='/#home' onClick={() => handleImageClick("home")}>
+              Home
+            </Link>
           </li>
           <li>
             <Link to='/#about'>About</Link>
+          </li>
+          <li>
+            <Link to='/#team' on>
+              Teams
+            </Link>
           </li>
           <li>
             <Link to='/#prizes'>Prizes</Link>
@@ -46,7 +56,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className={classes.Copyright}>
-        Copyright 2021 All rights reserved | hackbash
+        Copyright 2021 All rights reserved | HackBash
       </div>
       <div className={classes.Copyright2}>
         Developed & Designed by DSC Charusat with ❤

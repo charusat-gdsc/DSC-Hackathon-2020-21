@@ -42,14 +42,14 @@
   text-decoration: none;
   color: white;
   font-size: 1.6rem;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   font-weight: bold;
 }
 .homeText a {
   text-decoration: none;
   color: white;
 }
-.homeText:hover {
+.homeText a:hover {
   color: #653ab9;
   cursor: pointer;
 }
@@ -66,7 +66,7 @@
 }
 .judgeText {
   color: white;
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   font-weight: bold;
 }
 .randomText {
@@ -74,16 +74,21 @@
   margin-top: 3%;
   margin-left: 20%;
   margin-right: 20%;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   text-align: center;
 }
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   .judgeText {
     margin-top: 3%;
     font-size: 2rem;
   }
   .headerContainer {
     height: 15%;
+    overflow-y: hidden;
+  }
+  .dscLogo img {
+    height: 60px;
+    width: 60px;
   }
   .randomText {
     font-size: 1rem;
@@ -92,5 +97,24 @@
   }
   .imageContainer {
     overflow-y: hidden;
+  }
+  .flexContainer {
+    flex-direction: row;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .judgeContainer {
+    height: 80%;
+  }
+  .imageContainer {
+    height: 60vh;
+    width: 100%;
+  }
+  .judgeText {
+    font-size: 2.2rem;
+  }
+  .randomText {
+    font-size: 1rem;
+    margin-top: 8%;
   }
 }

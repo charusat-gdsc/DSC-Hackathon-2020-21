@@ -21,6 +21,14 @@
   font-size: 18px;
   line-height: 200%;
 }
+.content2 {
+  font-weight: bolder;
+  margin-top: 3%;
+  font-family: "Open Sans", serif;
+  color: #2b303f;
+  font-size: 18px;
+  line-height: 200%;
+}
 
 @media only screen and (max-width: 600px) {
   .Container {
