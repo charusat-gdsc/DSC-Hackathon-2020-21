@@ -110,7 +110,7 @@ const Members = () => {
           image={DSC_SURA}
           role={"Lead : Sri Sai"}
           teams={true}
-          name={"DSC IIIT, Surat"}
+          name={"DSC Suramapallem"}
           description={
             "Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry's standard dummy textever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book. It has survived not"
           }
@@ -119,7 +119,7 @@ const Members = () => {
           image={DSC_DDU}
           role={"Lead : Devanshu Brahmbhatt"}
           teams={true}
-          name={"DSC IIIT, Surat"}
+          name={"DSC DDU"}
           facebook={"https://www.facebook.com/ddustudent "}
           instagram={"https://www.instagram.com/ddustudent/"}
           description={
@@ -155,7 +155,7 @@ const Members = () => {
           image={DSC_BVM}
           role={"Lead : Jay Patel"}
           teams={true}
-          name={"DSC PDPU"}
+          name={"DSC BVM"}
           instagram={"https://instagram.com/dsc.bvm?igshid=10bdq5pb338p4"}
           description={
             "Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry's standard dummy textever since the 1500s, when an unknown printer took a galley of typeand scrambled it to make a type specimen book. It has survived not"

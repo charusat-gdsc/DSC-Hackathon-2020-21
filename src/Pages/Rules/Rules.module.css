@@ -1,0 +1,27 @@
+/** @format */
+
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15%;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.Logo img {
+  height: 100px;
+  width: 100px;
+}
+.Link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Link a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #e26161;
+  text-decoration: none;
+  font-size: 20px;
+}
+.Link a:hover {
+  color: #653ab9;
+}

@@ -12,9 +12,11 @@ import Presentation from "../../assets/presentation.png";
 import collab from "../../assets/collab.png";
 import Review from "../../assets/review.png";
 import PrizesSVG from "../../assets/prizes.png";
+import Rules from "../../assets/Rules.svg";
+import AI from "../../assets/AI.svg";
+import Dev from "../../assets/Dev.svg";
 import TeamsSVG from "../../assets/teams.png";
 import SVG from "../../Components/HomePage Components/SVGS/SVG";
-import Rules from "../../Components/HomePage Components/Rules/Rules";
 import Contact from "../../Components/HomePage Components/Contact/Contact";
 import SideDrawer from "../../Components/Navbar/Sidedrawer/SideDrawer";
 import Backdrop from "../../Components/Navbar/Backdrop/Backdrop";
@@ -42,13 +44,13 @@ const Homepage = () => {
             Think. Code. Innovate. <br />A chance to shine and win exciting
             prices!
           </p>
-          <button
-            data-hackathon-slug='YOUR-HACKATHON-SLUG'
-            data-button-theme='light'
-            style={{ height: "44px", width: "312px" }}
-            className={classes.btn}>
-            Grab Your spot now !
-          </button>
+          <div className={classes.btn}>
+            <div
+              class='apply-button'
+              data-hackathon-slug='HackBash'
+              data-button-theme='dark'
+              style={{ height: "44px", width: "312px" }}></div>
+          </div>
         </div>
         <div className={classes.SVG}>
           <img src={TeamWork} alt='SVG' />
@@ -112,6 +114,35 @@ const Homepage = () => {
           </div>
           <div className={classes.center3}>
             <SVG svgsrc={PrizesSVG} />
+          </div>
+        </div>
+      </section>
+      <section id='Domains'>
+        <Heading heading={"Hackathon Domains"} />
+        <div className={classes.flex3}>
+          <div>
+            <div className={classes.DomainSvg}>
+              <SVG svgsrc={AI} />
+            </div>
+            <Info
+              heading={"AI/ML Development"}
+              content={
+                "AI will contribute $15.7 trillion to the global economy by 2030. Instead of relaxing, let's be a part of this. Create a system that has any of the following technology stack - Machine Learning, Natural Language Processing, knowledge management, pattern recognition or any subset of AI. You can build literally anything, just that it should have a front end."
+              }
+            />
+          </div>
+          <div>
+            <div>
+              <div className={classes.DomainSvg}>
+                <SVG svgsrc={Dev} />
+              </div>
+              <Info
+                heading={"Full Stack Development"}
+                content={
+                  "Anything your heart desires! Hardware, web, mobile, gaming, VR, IoT, Blockchain...you name it, we’ll support it.  We have sponsored challenges, and other events to inspire you. The number of hacks here can be endless but do not forget to go through our evaluation criteria to ace in this domain. "
+                }
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -214,21 +245,21 @@ const Homepage = () => {
       </section>
       <section id='rules'>
         <Heading heading={"Rules"} />
-        <Rules
-          content={
-            "Attendees from all backgrounds, genders, and geographies are welcome. There is no age restriction to attend the hackathon. In case you are under 18, your parents/legal guardian should contact the hackathon to request a waiver authorizing you to attend the hackathon and submit their plan for your attendance and transportation to and from the hackathon."
-          }
-        />
-        <Rules
-          content={
-            "Committee members are not eligible to participate in the hackathon. They may, however, assist teams mentors during the coding/development phase."
-          }
-        />
-        <Rules
-          content={
-            "There is no country restriction but you must be eligible to receive prizes (in case you win) and you are responsible for paying any taxes on the prize winnings."
-          }
-        />
+        <div className={classes.flex2}>
+          <div>
+            <Info
+              content={
+                "Hackathons are like marathons: Some people go to compete but most people take part to better themselves and have fun. Whatever the reason is you’re at a hackathon, make sure you’re upholding the spirit of the hackathon by collaborating with other teams, helping beginners, and having fun"
+              }
+            />
+            <div className={classes.LearnMore2}>
+              <Link to='/rules'>Learn More..</Link>
+            </div>
+          </div>
+          <div className={classes.rulesSvg}>
+            <SVG svgsrc={Rules} />
+          </div>
+        </div>
       </section>
       <section id='contact'>
         <Contact />

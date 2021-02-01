@@ -19,5 +19,4 @@ const Info = ({ heading, content, smallHead, bold }) => {
     </div>
   );
 };
-
 export default Info;

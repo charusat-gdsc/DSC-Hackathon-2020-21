@@ -8,6 +8,10 @@
 .SVG {
   margin-top: 6%;
 }
+.btn {
+  margin-top: 3%;
+  margin-left: 10%;
+}
 .Info {
   width: 50%;
   margin-top: 6%;
@@ -20,6 +24,20 @@
   font-size: 18px;
   color: #e26161;
   text-decoration: none;
+}
+.LearnMore2 {
+  margin-top: 3%;
+  text-align: center;
+}
+.LearnMore2 a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #e26161;
+  text-decoration: none;
+}
+.LearnMore2 a:hover,
+.LearnMore:hover {
+  color: #653ab9;
 }
 .heading1 {
   letter-spacing: 10px;
@@ -50,25 +68,10 @@
 }
 
 .process {
+  margin-top: 4%;
   margin-bottom: 4%;
 }
 
-.btn {
-  background-color: #653ab9;
-  font-size: 22px;
-  color: white;
-  border: none;
-  padding: 5px 20px;
-  margin-left: 10%;
-  margin-top: 5%;
-}
-.btn a {
-  text-decoration: none;
-  color: white;
-}
-.btn a:hover {
-  cursor: pointer;
-}
 .backImg {
   height: 80vh;
   z-index: 2;
@@ -120,7 +123,17 @@
   align-items: center;
   margin-right: 10%;
 }
-
+.DomainSvg {
+  margin-left: 10%;
+}
+.DomainSvg img {
+  height: 350px;
+  width: 450px;
+}
+.rulesSvg img {
+  height: 350px;
+  width: 450px;
+}
 .img {
   height: 300px;
   width: 400px;
@@ -185,11 +198,6 @@
     margin-top: 2%;
     margin-left: 5%;
     font-size: 24px;
-  }
-  .btn {
-    display: block;
-    margin: auto;
-    margin-top: 5%;
   }
   .text {
     line-height: 170%;
@@ -281,5 +289,16 @@
   }
   .LearnMore {
     font-size: 18px;
+  }
+  .DomainSvg {
+    /* margin-left: 0%; */
+    display: block;
+    margin: auto;
+  }
+  .DomainSvg img {
+    display: block;
+    margin: auto;
+    height: 200px;
+    width: 250px;
   }
 }

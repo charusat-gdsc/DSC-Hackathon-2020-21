@@ -20,7 +20,9 @@ const Footer = () => {
           </a>
         </div>
         <div className={classes.box}>
-          <img src={Instagram} alt='Discord' />
+          <a target='_blank' href='https://instagram.com/hackbash'>
+            <img src={Instagram} alt='Discord' />
+          </a>
         </div>
       </div>
       <div className={classes.links}>
