@@ -1,0 +1,14 @@
+/** @format */
+
+.flexContainer {
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 1200px) {
+  .flexContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}

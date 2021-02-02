@@ -1,15 +1,12 @@
 /** @format */
+/* eslint-disable react/jsx-no-target-blank */
 
 import classes from "./Footer.module.css";
 import React from "react";
-import { Link } from "react-router-dom";
 import Discord from "../../assets/la_discord.svg";
 import Instagram from "../../assets/dashicons_instagram.svg";
 
 const Footer = () => {
-  const handleImageClick = (id) => {
-    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
-  };
   return (
     <div className={classes.Container}>
       <p className={classes.heading}>Follow Us</p>
@@ -24,38 +21,6 @@ const Footer = () => {
             <img src={Instagram} alt='Discord' />
           </a>
         </div>
-      </div>
-      <div className={classes.links}>
-        <ul>
-          <li>
-            <Link to='/#home' onClick={() => handleImageClick("home")}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to='/#about'>About</Link>
-          </li>
-          <li>
-            <Link to='/#team' on>
-              Teams
-            </Link>
-          </li>
-          <li>
-            <Link to='/#prizes'>Prizes</Link>
-          </li>
-          <li>
-            <Link to='/#process'>Process</Link>
-          </li>
-          <li>
-            <Link to='/#judges'>Judges</Link>
-          </li>
-          <li>
-            <Link to='/#rules'>Rules</Link>
-          </li>
-          <li>
-            <Link to='/#contact'>Contact</Link>
-          </li>
-        </ul>
       </div>
       <div className={classes.Copyright}>
         Copyright 2021 All rights reserved | HackBash

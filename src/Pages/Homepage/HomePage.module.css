@@ -30,7 +30,10 @@
   text-align: center;
 }
 .TimeLine {
+  margin-top: 3%;
+  padding-bottom: 3%;
   font-family: "Open Sans", sans-serif;
+  background-color: #f6f6f6;
   font-size: 16px;
 }
 .LearnMore2 a {
@@ -89,7 +92,6 @@
 }
 .flex2 {
   display: flex;
-  margin-bottom: 3%;
 }
 .flex3 {
   display: flex;
@@ -108,7 +110,18 @@
   color: #653ab9;
   font-family: "Open Sans", serif;
 }
-
+.Sponsors {
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
+.sponsorsSVG {
+  margin-top: 7%;
+  margin-left: 10%;
+}
+.sponsorsSVG img {
+  height: 300px;
+  width: 350px;
+}
 .svgRight {
   margin-right: 10%;
 }
@@ -299,10 +312,20 @@
     display: block;
     margin: auto;
   }
-  .DomainSvg img {
+  .DomainSvg img,
+  .sponsorsSVG img,
+  .rulesSvg img {
     display: block;
     margin: auto;
     height: 200px;
     width: 250px;
+    margin-top: 2%;
   }
+  .teamHeading {
+    font-size: 30px;
+    padding-top: 2%;
+  }
+  .sponsorsSVG {
+    margin-left: 0;
+    }
 }

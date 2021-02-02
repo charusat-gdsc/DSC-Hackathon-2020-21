@@ -26,37 +26,9 @@
   background-color: #e26161;
   cursor: pointer;
 }
-.links {
-  margin-top: 3%;
-  padding-bottom: 3%;
-  border-bottom: 2px solid white;
-  margin-right: 15%;
-  margin-left: 15%;
-}
-.links ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-}
-.links li {
-  margin-left: 5%;
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-}
-.links a {
-  color: white;
-  text-decoration: none;
-}
-.links li:first-child {
-  margin-left: 0;
-}
-.links a:hover {
-  cursor: pointer;
-  color: #e26161;
-}
 .Copyright {
   text-align: center;
-  margin-top: 1%;
+  margin-top: 3%;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   color: white;

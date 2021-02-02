@@ -6,6 +6,7 @@ import Card from "../../Components/Judges_Teams_Card/Card";
 import classes from "./Teams.module.css";
 import DSC_IIT from "../../assets/DSC_IIIT.png";
 import DSC_NIT from "../../assets/DSC NIT.png";
+import NestedNavbar from "../../Components/NestedNavbar/NestedNavbar";
 import DSC_SCET from "../../assets/DSC SCET.png";
 import DSC_SURA from "../../assets/DSC Sura.png";
 import DSC_DDU from "../../assets/DSC DDU.png";
@@ -15,6 +16,7 @@ import DSC_PDPU from "../../assets/DSC PDPU.png";
 import DSC_LOGO from "../../assets/dsc_logo.ico";
 import Footer from "../../Components/Footer/Footer";
 import { Link } from "react-router-dom";
+import Heading from "../../Components/HomePage Components/Headings/Heading";
 // import Page from "../../Layout/Page";
 
 const Members = () => {
@@ -48,23 +50,8 @@ const Members = () => {
   // };
   return (
     <div>
-      <div className={classes.imageContainer}>
-        <div className={classes.headerContainer}>
-          <div className={classes.dscLogo}>
-            <img src={DSC_LOGO} alt='Logo' />
-          </div>
-          <div className={classes.homeText}>
-            <Link to='/'>Home</Link>
-          </div>
-        </div>
-        <div className={classes.judgeContainer}>
-          <span className={classes.judgeText}>Teams</span>
-          <span className={classes.randomText}>
-            Alone we can do so little, together we can do so much Our team is a
-            compilation of astounding developers.
-          </span>
-        </div>
-      </div>
+      <NestedNavbar />
+      <Heading heading={"Teams"} />
       <div className={classes.flexContainer}>
         <Card
           image={DSC_SCET}

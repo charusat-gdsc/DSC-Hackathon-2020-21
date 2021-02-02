@@ -9,3 +9,8 @@
   padding-bottom: 3%;
   font-family: "Open Sans", serif;
 }
+@media (max-width: 1200px) {
+  .Heading {
+    font-size: 30px;
+  }
+}

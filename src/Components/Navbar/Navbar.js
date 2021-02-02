@@ -45,6 +45,7 @@ const Navbar = ({ showSideDrawer }) => {
             "about",
             "team",
             "prizes",
+            "sponsorships",
             "process",
             "judges",
             "rules",
@@ -74,6 +75,12 @@ const Navbar = ({ showSideDrawer }) => {
               to='#prizes'
               onClick={() => handleImageClick("prizes")}>
               Prizes
+            </Link>
+            <Link
+              className={classes.link}
+              to='#sponsorships'
+              onClick={() => handleImageClick("sponsorships")}>
+              Sponsorships
             </Link>
             <Link
               className={classes.link}

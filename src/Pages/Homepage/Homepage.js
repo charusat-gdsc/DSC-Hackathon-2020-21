@@ -15,6 +15,7 @@ import PrizesSVG from "../../assets/prizes.png";
 import Rules from "../../assets/Rules.svg";
 import AI from "../../assets/AI.svg";
 import Dev from "../../assets/Dev.svg";
+import Sponsors from "../../assets/Sponsors.svg";
 import TeamsSVG from "../../assets/teams.png";
 import SVG from "../../Components/HomePage Components/SVGS/SVG";
 import Contact from "../../Components/HomePage Components/Contact/Contact";
@@ -108,13 +109,43 @@ const Homepage = () => {
           <div>
             <Info
               content={
-                "Nothing piques the interest of a developer more than the developer swag!  As the saying goes “ The reward for work well done is the opportunity to do more”, who wouldn’t wanna grab some exciting goodies and swags that come with your hard work.  We cannot promise you Redbull in the online mode, but you have nothing to worry about as we have lots of prizes reserved for you. The HackBash brings you prizes worth Rs 40,000/-.  Not only this, we have swags, goodies, stickers, and a lot more stuff awaiting you. So what's stopping you from grabbing this opportunity?"
+                "Nothing piques the interest of a developer more than the developer swag!  As the saying goes “ The reward for work well done is the opportunity to do more”, who wouldn’t wanna grab some exciting goodies and swags that come with your hard work.  "
               }
               heading={"Win Exciting Prices"}
+            />
+            <Info
+              content={
+                "We cannot promise you Redbull in the online mode, but you have nothing to worry about as we have lots of prizes reserved for you. The HackBash brings you prizes worth Rs 40,000/-.  Not only this, we have swags, goodies, stickers, and a lot more stuff awaiting you. So what's stopping you from grabbing this opportunity?"
+              }
             />
           </div>
           <div className={classes.center3}>
             <SVG svgsrc={PrizesSVG} />
+          </div>
+        </div>
+      </section>
+      <section id='sponsorships'>
+        <div className={classes.flex2}>
+          <div className={classes.sponsorsSVG}>
+            <SVG svgsrc={Sponsors} />
+          </div>
+          <div className={classes.Sponsors}>
+            <div className={classes.teamHeading}>Our Sponsors</div>
+            <Info
+              content={
+                "The Hackbash Community Is Very Grateful To All Our Sponsors."
+              }
+              bold={true}
+            />
+            <Info
+              content={
+                "Here are the members of the Hackbash family that understand the value of tech education and help make our hackathon the very best. They are a key role to the innovation and supporters of this next wave of innovation. What can we say, they’re awesome!!"
+              }
+            />
+            <br />
+            <Link className={classes.LearnMore} to='/sponsorships'>
+              Learn More..
+            </Link>
           </div>
         </div>
       </section>
@@ -146,9 +177,11 @@ const Homepage = () => {
             </div>
           </div>
         </div>
+      </section>
+      <section className={classes.process} id='process'>
         <div>
-          <Heading heading={"Time Line"} />
           <div className={classes.TimeLine}>
+            <Heading heading={"Time Line"} />
             <Timeline>
               <TimelineItem
                 shadows
@@ -178,7 +211,7 @@ const Homepage = () => {
                 side='left'
                 dateColor={"white"}
                 title='Hackathon '
-                date='14/03/2021'>
+                date='13/03/2021'>
                 The most awaited event Hackathon starts at 10 am on 13th March,
                 2021. Keep track of the time as the event comes to an end
                 exactly after 24 hours on 14th March 2021, 10 am.
@@ -195,9 +228,7 @@ const Homepage = () => {
             </Timeline>
           </div>
         </div>
-      </section>
-      <section className={classes.process} id='process'>
-        <Heading heading={"Hackathon Process"} />
+        <Heading heading={"Rounds Information"} />
         <div className={classes.flex2}>
           <div className={classes.svgLeft}>
             <div>

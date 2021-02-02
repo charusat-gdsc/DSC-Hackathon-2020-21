@@ -1,28 +1,19 @@
 /** @format */
 
-import classes from "./Rules.module.css";
 import React, { useEffect } from "react";
-import Logo from "../../assets/dsc_logo.ico";
-import { Link } from "react-router-dom";
 import Footer from "../../Components/Footer/Footer";
 import Heading from "../../Components/HomePage Components/Headings/Heading";
 import Info from "../../Components/HomePage Components/Info/Info";
 import Rules from "../../Components/HomePage Components/Rules/Rules";
+import NestedNavbar from "../../Components/NestedNavbar/NestedNavbar";
 
 const Rulespage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className={classes.Container}>
-      <div className={classes.NavBar}>
-        <div className={classes.Logo}>
-          <img src={Logo} alt='Logo' />
-        </div>
-        <div className={classes.Link}>
-          <Link to='/'>Home</Link>
-        </div>
-      </div>
+    <div>
+      <NestedNavbar />
       <Heading heading={"Rules"} />
       <Info heading={"Eligibility"} />
       <Rules

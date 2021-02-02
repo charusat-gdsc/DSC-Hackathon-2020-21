@@ -11,9 +11,9 @@
   width: 100px;
 }
 .Link {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .Link a {
   font-family: "Open Sans", sans-serif;
