@@ -29,6 +29,10 @@
   margin-top: 3%;
   text-align: center;
 }
+.TimeLine {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
 .LearnMore2 a {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;

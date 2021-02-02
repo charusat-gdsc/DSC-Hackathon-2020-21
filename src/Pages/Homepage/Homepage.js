@@ -21,6 +21,7 @@ import Contact from "../../Components/HomePage Components/Contact/Contact";
 import SideDrawer from "../../Components/Navbar/Sidedrawer/SideDrawer";
 import Backdrop from "../../Components/Navbar/Backdrop/Backdrop";
 import { Link } from "react-router-dom";
+import { Timeline, TimelineItem } from "react-timelinev2";
 
 const Homepage = () => {
   const [sideDrawer, setsideDrawer] = useState(false);
@@ -46,7 +47,7 @@ const Homepage = () => {
           </p>
           <div className={classes.btn}>
             <div
-              class='apply-button'
+              className='apply-button'
               data-hackathon-slug='HackBash'
               data-button-theme='dark'
               style={{ height: "44px", width: "312px" }}></div>
@@ -143,6 +144,55 @@ const Homepage = () => {
                 }
               />
             </div>
+          </div>
+        </div>
+        <div>
+          <Heading heading={"Time Line"} />
+          <div className={classes.TimeLine}>
+            <Timeline>
+              <TimelineItem
+                shadows
+                hoverShadow
+                side='left'
+                title='Application'
+                dateColor={"white"}
+                date='5/02/2021'>
+                The application for the hackathon will be open to everyone from
+                5th of february, 2021 on dev folio. Do make sure to fill the
+                form and submit it by 1st of march,2021, 11.59 pm. Do remember
+                that your profile will be judged on the github and the
+                presentation of your idea.
+              </TimelineItem>
+              <TimelineItem
+                shadows
+                hoverShadow
+                side='right'
+                dateColor={"white"}
+                title='Selected candidates'
+                date='6/03/2021'>
+                After the analysis of all the submitted presentations, A list of
+                final candidates eligible for the hackathon will be released on
+                6th of march,2021.
+              </TimelineItem>
+              <TimelineItem
+                side='left'
+                dateColor={"white"}
+                title='Hackathon '
+                date='14/03/2021'>
+                The most awaited event Hackathon starts at 10 am on 13th March,
+                2021. Keep track of the time as the event comes to an end
+                exactly after 24 hours on 14th March 2021, 10 am.
+              </TimelineItem>
+              <TimelineItem
+                dateColor={"white"}
+                side='right'
+                title='Results '
+                date='Not Declared'>
+                After the most awaiting event we know each one of you is excited
+                to know the final result. Rest assured as the final result will
+                be out in a period of 1 week. So keep calm and do coding.
+              </TimelineItem>
+            </Timeline>
           </div>
         </div>
       </section>
