@@ -49,7 +49,7 @@ const Homepage = () => {
           <div className={classes.btn}>
             <div
               className='apply-button'
-              data-hackathon-slug='HackBash'
+              data-hackathon-slug='hackbash'
               data-button-theme='dark'
               style={{ height: "44px", width: "312px" }}></div>
           </div>
