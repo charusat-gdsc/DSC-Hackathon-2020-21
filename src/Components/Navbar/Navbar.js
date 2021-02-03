@@ -72,6 +72,12 @@ const Navbar = ({ showSideDrawer }) => {
             </Link>
             <Link
               className={classes.link}
+              to='#process'
+              onClick={() => handleImageClick("process")}>
+              Domains
+            </Link>
+            <Link
+              className={classes.link}
               to='#prizes'
               onClick={() => handleImageClick("prizes")}>
               Prizes
@@ -81,12 +87,6 @@ const Navbar = ({ showSideDrawer }) => {
               to='#sponsorships'
               onClick={() => handleImageClick("sponsorships")}>
               Sponsorships
-            </Link>
-            <Link
-              className={classes.link}
-              to='#process'
-              onClick={() => handleImageClick("process")}>
-              Process
             </Link>
             <Link
               className={classes.link}

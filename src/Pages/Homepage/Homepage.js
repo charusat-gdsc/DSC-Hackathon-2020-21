@@ -103,53 +103,7 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-      <section id='prizes' className={classes.background}>
-        <Heading heading={"Prizes"} />
-        <div className={classes.flex2}>
-          <div>
-            <Info
-              content={
-                "Nothing piques the interest of a developer more than the developer swag!  As the saying goes “ The reward for work well done is the opportunity to do more”, who wouldn’t wanna grab some exciting goodies and swags that come with your hard work.  "
-              }
-              heading={"Win Exciting Prices"}
-            />
-            <Info
-              content={
-                "We cannot promise you Redbull in the online mode, but you have nothing to worry about as we have lots of prizes reserved for you. The HackBash brings you prizes worth Rs 40,000/-.  Not only this, we have swags, goodies, stickers, and a lot more stuff awaiting you. So what's stopping you from grabbing this opportunity?"
-              }
-            />
-          </div>
-          <div className={classes.center3}>
-            <SVG svgsrc={PrizesSVG} />
-          </div>
-        </div>
-      </section>
-      <section id='sponsorships'>
-        <div className={classes.flex2}>
-          <div className={classes.sponsorsSVG}>
-            <SVG svgsrc={Sponsors} />
-          </div>
-          <div className={classes.Sponsors}>
-            <div className={classes.teamHeading}>Our Sponsors</div>
-            <Info
-              content={
-                "The Hackbash Community Is Very Grateful To All Our Sponsors."
-              }
-              bold={true}
-            />
-            <Info
-              content={
-                "Here are the members of the Hackbash family that understand the value of tech education and help make our hackathon the very best. They are a key role to the innovation and supporters of this next wave of innovation. What can we say, they’re awesome!!"
-              }
-            />
-            <br />
-            <Link className={classes.LearnMore} to='/sponsorships'>
-              Learn More..
-            </Link>
-          </div>
-        </div>
-      </section>
-      <section id='Domains'>
+      <section className={classes.process} id='process'>
         <Heading heading={"Hackathon Domains"} />
         <div className={classes.flex3}>
           <div>
@@ -177,8 +131,6 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className={classes.process} id='process'>
         <div>
           <div className={classes.TimeLine}>
             <Heading heading={"Time Line"} />
@@ -278,6 +230,53 @@ const Homepage = () => {
           </div>
         </div>
       </section>
+      <section id='prizes' className={classes.background}>
+        <Heading heading={"Prizes"} />
+        <div className={classes.flex2}>
+          <div>
+            <Info
+              content={
+                "Nothing piques the interest of a developer more than the developer swag!  As the saying goes “ The reward for work well done is the opportunity to do more”, who wouldn’t wanna grab some exciting goodies and swags that come with your hard work.  "
+              }
+              heading={"Win Exciting Prices"}
+            />
+            <Info
+              content={
+                "We cannot promise you Redbull in the online mode, but you have nothing to worry about as we have lots of prizes reserved for you. The HackBash brings you prizes worth Rs 40,000/-.  Not only this, we have swags, goodies, stickers, and a lot more stuff awaiting you. So what's stopping you from grabbing this opportunity?"
+              }
+            />
+          </div>
+          <div className={classes.center3}>
+            <SVG svgsrc={PrizesSVG} />
+          </div>
+        </div>
+      </section>
+      <section id='sponsorships'>
+        <div className={classes.flex2}>
+          <div className={classes.sponsorsSVG}>
+            <SVG svgsrc={Sponsors} />
+          </div>
+          <div className={classes.Sponsors}>
+            <div className={classes.teamHeading}>Our Sponsors</div>
+            <Info
+              content={
+                "The Hackbash Community Is Very Grateful To All Our Sponsors."
+              }
+              bold={true}
+            />
+            <Info
+              content={
+                "Here are the members of the Hackbash family that understand the value of tech education and help make our hackathon the very best. They are a key role to the innovation and supporters of this next wave of innovation. What can we say, they’re awesome!!"
+              }
+            />
+            <br />
+            <Link className={classes.LearnMore} to='/sponsorships'>
+              Learn More..
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className={classes.background} id='judges'>
         <Heading heading={"Judges"} />
         <div className={classes.flex2}>
