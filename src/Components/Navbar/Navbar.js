@@ -86,7 +86,7 @@ const Navbar = ({ showSideDrawer }) => {
               className={classes.link}
               to='#sponsorships'
               onClick={() => handleImageClick("sponsorships")}>
-              Sponsorships
+              Sponsors
             </Link>
             <Link
               className={classes.link}

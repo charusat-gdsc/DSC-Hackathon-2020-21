@@ -178,7 +178,35 @@
   font-family: "Open Sans", serif;
 }
 
+.trailer {
+  display: flex;
+  justify-content: center;
+}
+
+.trailer iframe {
+  width: 700px;
+  height: 450px;
+}
+
+.pptbtn {
+  display: flex;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  justify-content: center;
+}
+.pptbtn a {
+  font-family: "Open Sans", serif;
+  text-decoration: none;
+  font-size: 20px;
+  color: #653ab9;
+}
 @media (max-width: 1200px) {
+  .trailer iframe {
+    width: 600px;
+    height: 350px;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
   .Container {
     flex-direction: column-reverse;
     margin-bottom: 10%;
@@ -327,5 +355,5 @@
   }
   .sponsorsSVG {
     margin-left: 0;
-    }
+  }
 }

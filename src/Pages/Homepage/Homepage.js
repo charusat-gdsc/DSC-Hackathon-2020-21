@@ -1,4 +1,6 @@
 /** @format */
+/* eslint-disable react/jsx-no-target-blank */
+/* eslint-disable jsx-a11y/anchor-has-content */
 
 import React, { Fragment, useState } from "react";
 import TeamWork from "../../assets/teamwork.svg";
@@ -58,7 +60,16 @@ const Homepage = () => {
           <img src={TeamWork} alt='SVG' />
         </div>
       </section>
-      <div className={classes.backImg} />
+      <div className={classes.trailer}>
+        <iframe
+          width='700'
+          height='450'
+          title='Trailer'
+          src='https://www.youtube.com/embed/M77AVgw9wbI'
+          frameborder='0'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+          allowfullscreen></iframe>
+      </div>
       <section id='about'>
         <Heading heading={"About"} />
         <div className={classes.flex}>
@@ -201,9 +212,16 @@ const Homepage = () => {
             />
             <Info
               content={
-                "Teams for the event will be selected on the basis of their Devfolio profile and their Resumes.We would love to hear what you are going to build. A brief description of around 200 words about your creative ideas will add an extra flourish to get people to talking. "
+                "Teams for the event will be selected on the basis of their Devfolio profile and their Presentations.We would love to hear what you are going to build. A brief description of your creative ideas in a powerpoint presentation will add an extra flourish to get people to talking. We expect you to follow the strict guidelines when making presentation."
               }
             />
+            <div className={classes.pptbtn}>
+              <a
+                target='_blank'
+                href='https://docs.google.com/presentation/d/1Q5v4qfEeh-n03fie5Cf4oDfT9USVitIlkl3ufsYgbAc/edit?usp=sharing'>
+                Demo Presentation
+              </a>
+            </div>
           </div>
         </div>
         <div className={classes.flex3}>
