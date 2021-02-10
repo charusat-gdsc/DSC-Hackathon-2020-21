@@ -1,0 +1,100 @@
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+}
+.imageContainer {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  /* background-image: url("../../assets/prizes_background.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.homeText {
+  position: absolute;
+  z-index: 99;
+  top: 2%;
+  right: 3%;
+  color: white;
+  font-size: 1.6rem;
+  letter-spacing: 4px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+
+.prizeWinner1 {
+    margin: 15px;
+    height: 40vh;
+    width: 40vh;
+    background-image: url('../../assets/Ellipse1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width: 600px) {
+  .prizeWinner1 {
+    height: 35vh;
+    width: 35vh;
+  }
+}
+
+.prizeWinner2 {
+    margin: 15px;
+    height: 35vh;
+    width: 35vh;
+    background-image: url('../../assets/Ellipse2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.prizeWinner3 {
+    margin: 15px;
+    height: 30vh;
+    width: 30vh;
+    background-image: url('../../assets/Ellipse3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.centerAlign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.domainName {
+    font-family: "Open Sans", sans-serif;
+    color: purple;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.position {
+    margin-top: 15px; 
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bg {
+    /* background-color: rgb(185, 185, 185); */
+}
+
+.prizeNote {
+    padding: 10vh;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
