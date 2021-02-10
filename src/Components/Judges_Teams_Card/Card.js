@@ -29,8 +29,8 @@ const Card = (props) => {
     showData(props);
   };
   const TeamRedirect = () => {
-    const link = props.name.split(" ").join("-");
-    history.push(`/teams/${link}`);
+    // const link = props.name.split(" ").join("-");
+    // history.push(`/teams/${link}`);
   };
   return (
     <div
