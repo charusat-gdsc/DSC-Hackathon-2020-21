@@ -13,9 +13,7 @@ import DSC_DDU from "../../assets/DSC DDU.png";
 import DSC_BVM from "../../assets/DSC BVM.png";
 import DSC_Charusat from "../../assets/DSC Charusat.png";
 import DSC_PDPU from "../../assets/DSC PDPU.png";
-import DSC_LOGO from "../../assets/dsc_logo.ico";
 import Footer from "../../Components/Footer/Footer";
-import { Link } from "react-router-dom";
 import Heading from "../../Components/HomePage Components/Headings/Heading";
 // import Page from "../../Layout/Page";
 
@@ -23,31 +21,6 @@ const Members = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  // const [isOpen, setIsOpen] = useState(false);
-  // const [modalData, setModalData] = useState({});
-
-  // const showData = ({
-  //   image,
-  //   role,
-  //   instagram,
-  //   linkedin,
-  //   twitter,
-  //   facebook,
-  //   description,
-  // }) => {
-  //   setModalData({
-  //     image,
-  //     name,
-  //     role,
-  //     instagram,
-  //     linkedin,
-  //     twitter,
-  //     facebook,
-  //     description,
-  //   });
-
-  //   setIsOpen(true);
-  // };
   return (
     <div>
       <NestedNavbar />
@@ -150,7 +123,6 @@ const Members = () => {
         />
       </div>
       <Footer />
-      {/* <ProfileModal Data={modalData} isOpen={isOpen} setIsOpen={setIsOpen} /> */}
     </div>
   );
 };

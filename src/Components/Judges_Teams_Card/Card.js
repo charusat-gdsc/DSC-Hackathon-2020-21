@@ -8,6 +8,7 @@ import {
   FaLinkedinIn,
   FaInstagram,
 } from "react-icons/fa";
+import { useHistory } from "react-router-dom";
 const Card = (props) => {
   const {
     image,
@@ -20,6 +21,7 @@ const Card = (props) => {
     showData,
   } = props;
   const iconObj = { fontSize: "1.6rem", color: "white", margin: "0 2%" };
+  const history = useHistory();
   const openLink = (url, e) => {
     window.open(url);
   };
@@ -27,8 +29,8 @@ const Card = (props) => {
     showData(props);
   };
   const TeamRedirect = () => {
-    // const link = props.name.split(" ").join("-");
-    // history.push(`/teams/${link}`);
+    const link = props.name.split(" ").join("-");
+    history.push(`/teams/${link}`);
   };
   return (
     <div
@@ -73,7 +75,7 @@ const Card = (props) => {
         </div>
       </div>
 
-      <div style={{ padding: "3% 5%" }}>
+      <div style={{ padding: "5% 5%" }}>
         <p className={classes.name}>{name}</p>
         <p className={classes.role}>{role}</p>
       </div>

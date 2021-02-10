@@ -12,6 +12,7 @@ import Tezos from "../../assets/Sponsors/tezos.png";
 import Global_Careers from "../../assets/Sponsors/Global Carrers.jpg";
 import IEEE1 from "../../assets/Sponsors/IEEE-1.jpeg";
 import IEEE2 from "../../assets/Sponsors/IEEE-2.jpeg";
+import Github from "../../assets/Sponsors/Github.png";
 import SponsorCard from "../../Components/SponsorsCard/SponsorCard";
 import Footer from "../../Components/Footer/Footer";
 const Sponsorships = () => {
@@ -32,8 +33,9 @@ const Sponsorships = () => {
         <SponsorCard img={Portis} link={"https://www.portis.io/"} />
         <SponsorCard img={Tezos} link={"https://tezos.com/"} />
         <SponsorCard img={Global_Careers} link={"https://tezos.com/"} />
-        <SponsorCard img={IEEE1} link={"https://tezos.com/"} />
-        <SponsorCard img={IEEE2} link={"https://tezos.com/"} />
+        <SponsorCard img={IEEE2} link={"https://ieeegujaratsection.org/"} />
+        <SponsorCard img={Github} link={"https://githubcampus.expert/"} />
+        <SponsorCard img={IEEE1} link={"http://Ieeespsgs.org"} />
       </div>
       <Footer />
     </div>
