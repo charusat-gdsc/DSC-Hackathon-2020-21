@@ -191,6 +191,17 @@ const Homepage = () => {
             </Timeline>
           </div>
         </div>
+        <Heading heading={"How To Register"} />
+        <div className={classes.trailer}>
+          <iframe
+            width='700'
+            height='450'
+            title='Trailer'
+            src='https://www.youtube.com/embed/dIFfVc-hHLk'
+            frameborder='0'
+            allow='accelerometer; autoplay; c lipboard-write; encrypted-media; gyroscope; picture-in-picture'
+            allowfullscreen></iframe>
+        </div>
         <Heading heading={"Rounds Information"} />
         <div className={classes.flex2}>
           <div className={classes.svgLeft}>
@@ -262,7 +273,8 @@ const Homepage = () => {
               content={
                 "We cannot promise you Redbull in the online mode, but you have nothing to worry about as we have lots of prizes reserved for you. The HackBash brings you prizes worth Rs 40,000/-.  Not only this, we have swags, goodies, stickers, and a lot more stuff awaiting you. So what's stopping you from grabbing this opportunity?"
               }
-            /> <br /> 
+            />{" "}
+            <br />
             <Link className={classes.LearnMore} to='/prizes'>
               Learn More..
             </Link>
